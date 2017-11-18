@@ -8,7 +8,7 @@
   "files": ["index.js", "example.js"],
   "scripts": {
     "test":
-      "node --harmony_async_iteration -r @std/esm test.js | tap-prettify - && linterjs .",
+      "node --harmony_async_iteration -r @std/esm test.js | tap-colorize - && linterjs .",
     "doc": "documentation readme index.js --section=API"
   },
   "engines": { "node": ">9" },
