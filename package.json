@@ -1,6 +1,6 @@
 {
   "name": "is-async-iterable",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Checks if a given object is async iterable.",
   "repository": "parro-it/is-async-iterable",
   "author": "Andrea Parodi <andrea@parro.it>",
