@@ -1,9 +1,9 @@
-# $package_name
+# is-async-iterable
 
-[![Travis Build Status](https://img.shields.io/travis/$package_author/$package_name/master.svg)](http://travis-ci.org/$package_author/$package_name)
-[![NPM downloads](https://img.shields.io/npm/dt/$package_name.svg)](https://npmjs.org/package/$package_name)
+[![Travis Build Status](https://img.shields.io/travis/parro-it/is-async-iterable/master.svg)](http://travis-ci.org/parro-it/is-async-iterable)
+[![NPM downloads](https://img.shields.io/npm/dt/is-async-iterable.svg)](https://npmjs.org/package/is-async-iterable)
 
-> $package_description
+> Checks if a given object is async iterable.
 
 background details relevant to understanding what this module does
 
@@ -15,9 +15,9 @@ __This module is part of [Async iterable fun](https://github.com/parro-it/ai-fun
 description of the example
 
 ```js
-const $package_var = require('$package_name');
+const isAsyncIterable = require('is-async-iterable');
 
-console.log({$package_var});
+console.log({isAsyncIterable});
 ```
 
 This will output
@@ -32,7 +32,7 @@ This will output
 With [npm](https://npmjs.org/) installed, run
 
 ```bash
-npm install --save $package_name
+npm install --save is-async-iterable
 ```
 
 ## See Also

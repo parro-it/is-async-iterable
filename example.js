@@ -1,3 +1,3 @@
-const $package_var = require("$package_name");
+const isAsyncIterable = require("is-async-iterable");
 
-console.log({ $package_var });
+console.log({ isAsyncIterable });
