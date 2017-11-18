@@ -9,6 +9,14 @@ test("return false for non async iterables", async t => {
   t.false(isAsyncIterable(0));
 });
 
+test("return false for null", async t => {
+  t.false(isAsyncIterable(null));
+});
+
+test("return false for undefined", async t => {
+  t.false(isAsyncIterable());
+});
+
 test("return true for async iterables", async t => {
   t.true(isAsyncIterable((async function*() {})()));
 });

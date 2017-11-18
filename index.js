@@ -4,6 +4,9 @@
  * @return {Boolean}     true if the value is async iterable
  */
 export default function isAsyncIterable(val) {
+  if (val === null || val === undefined) {
+    return false;
+  }
   const isIterable = typeof val[Symbol.iterator] === "function";
   const isAsync = typeof val[Symbol.asyncIterator] === "function";
   // ? console.log({ val, isIterable, isAsync, s: Symbol.asyncIterator });
