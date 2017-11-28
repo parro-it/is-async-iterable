@@ -1,5 +1,6 @@
 import test from "tape-async";
 import isAsyncIterable from ".";
+import AsyncIterable from "asynciterable";
 
 test("exports a function", async t => {
   t.is(typeof isAsyncIterable, "function");
@@ -18,7 +19,7 @@ test("return false for undefined", async t => {
 });
 
 test("return true for async iterables", async t => {
-  t.true(isAsyncIterable((async function*() {})()));
+  t.true(isAsyncIterable(new AsyncIterable(() => 0)));
 });
 
 test("return true for iterables - array", async t => {
